@@ -1,0 +1,72 @@
+/* style.css */
+
+body {
+    font-family: system-ui, Arial, sans-serif;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+#controls {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+#todoList {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+.todo-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status {
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.status.complete {
+    background: #2c7a7b;
+}
+
+.status.incomplete {
+    background: #c53030;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 8px;
+}
+
+button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button.delete {
+    background: #e53e3e;
+    color: white;
+}
+
+button.toggle {
+    background: #3182ce;
+    color: white;
+}
